@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Savana Clothing - Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-bg">
+
+    <header class="nav">
+        <h2>Savana Clothing</h2>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="feedbackpage.html">Feedback</a>
+            <span class="cart">🛒 <span id="cart-count">0</span></span>
+        </nav>
+    </header>
+
+    <div class="hero" style="min-height: 30vh;">
+        <h1>Our Collection</h1>
+        <p>Discover pieces that match your style</p>
+    </div>
+
+    <div class="shop-container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <input id="search" type="text" placeholder="Search products..." onkeyup="searchProducts()">
+
+        <div class="products">
+
+            <div class="product">
+                <img src="image/p1.jpg" alt="Casual T-Shirt">
+                <h3>Casual T-Shirt</h3>
+                <p>₹499</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="image/p2.jpg" alt="Denim Jacket">
+                <h3>Denim Jacket</h3>
+                <p>₹1499</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="image/p3.jpg" alt="Summer Dress">
+                <h3>Summer Dress</h3>
+                <p>₹999</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="image/p4.jpg" alt="Hoodie">
+                <h3>Cozy Hoodie</h3>
+                <p>₹1199</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="image/p5.jpg" alt="Formal Shirt">
+                <h3>Formal Shirt</h3>
+                <p>₹899</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="image/p6.jpg" alt="Jeans">
+                <h3>Classic Jeans</h3>
+                <p>₹1299</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="contact-footer">
+        <h3>Contact Us</h3>
+        <p>Email: support@savana.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: Savana Clothing, Mumbai, India</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

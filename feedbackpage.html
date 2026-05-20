@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Savana Clothing - Feedback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-bg">
+
+    <header class="nav">
+        <h2>Savana Clothing</h2>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="feedbackpage.html">Feedback</a>
+            <span class="cart">🛒 <span id="cart-count">0</span></span>
+        </nav>
+    </header>
+
+    <div class="hero" style="min-height: 25vh;">
+        <h1>We Value Your Feedback</h1>
+        <p>Help us improve your shopping experience</p>
+    </div>
+
+    <div class="form-container">
+        <h2>Share Your Experience</h2>
+        <form onsubmit="return submitFeedback()">
+            <label>Name</label>
+            <input type="text" placeholder="Your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com" required>
+
+            <label>How was your experience?</label>
+            <select required>
+                <option value="">Select an option</option>
+                <option>Excellent</option>
+                <option>Good</option>
+                <option>Average</option>
+                <option>Poor</option>
+            </select>
+
+            <label>Your Feedback</label>
+            <textarea placeholder="Tell us what you think..." rows="5"></textarea>
+
+            <button type="submit">Share Your Feedback</button>
+        </form>
+
+        <div class="thank-you-message" id="thankYouMessage">
+            <h3>🎉 Thank You!</h3>
+            <p>We appreciate your feedback and will use it to improve our service.</p>
+        </div>
+    </div>
+
+    <section style="padding: 50px 20px; background: #FFF;">
+        <h2 style="text-align: center; font-size: 32px; margin-bottom: 40px; color: #3A3A3A;">What Customers Are Saying</h2>
+        <div class="products" style="display: flex; gap: 24px; justify-content: center; padding: 0; flex-wrap: wrap;">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Amazing quality and fast delivery. Will order again!"</p>
+                <p class="review-author">- Shreyas P.</p>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"So comfortable! The perfect fit for casual days."</p>
+                <p class="review-author">- Anushka S.</p>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★☆</div>
+                <p class="review-text">"Great prices and good variety. Highly recommend!"</p>
+                <p class="review-author">- Zainab</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="contact-footer">
+        <h3>Contact Us</h3>
+        <p>Email: support@savana.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: Savana Clothing, Mumbai, India</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
